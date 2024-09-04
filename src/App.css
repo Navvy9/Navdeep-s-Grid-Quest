@@ -1,0 +1,70 @@
+/* App.css */
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+}
+
+.puzzle-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-template-rows: repeat(3, 100px);
+  gap: 5px;
+  margin-bottom: 20px;
+}
+
+.Box, .EmptyBox {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.EmptyBox {
+  background-color: #fff;
+  border: 1px solid #ddd;
+}
+
+.start-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+.start-button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.timer {
+  margin-top: 10px;
+  font-size: 20px;
+  color: #333;
+}
+h1 {
+  font-size: 2.5rem; /* Adjust the font size as needed */
+  font-family: 'Arial', sans-serif; /* Choose a font family */
+  color: #333; /* Change the text color */
+  text-align: center; /* Center-align the text */
+  margin: 20px 0; /* Add some margin above and below */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+  letter-spacing: 1px; /* Adjust letter spacing */
+}
+
